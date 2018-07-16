@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <title>React App</title>
+  <link href="static/index.css" rel="stylesheet"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
+<div id="root"></div>
+<script th:inline="javascript">
+/*<![CDATA[*/
+
+    var toggles = /*[[${toggles}]]*/ 'default';
+    //console.log(toggles);
+
+/*]]>*/
+</script>
+<script type="text/javascript" src="static/index.js"></script>
+</body>
+</html>
